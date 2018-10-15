@@ -12,8 +12,12 @@ Vagrant.configure(2) do |config|
 
   # Every Vagrant development environment requires a box. You can search for
   # boxes at https://atlas.hashicorp.com/search.
+
+## Usé ubuntu/xennial puesto que la documentación para NodeRed sugería esta distribución
   config.vm.box = "ubuntu/xenial64"
+##Publiqué un port forward de la maquina virtual  haia 1880
   config.vm.network "forwarded_port", guest: 1880, host: 1880
+##Integración con ansible
   config.vm.provision "ansible" do |ansible|
     ansible.playbook = "nodered/playbook.yml"
   end

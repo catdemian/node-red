@@ -12,6 +12,14 @@
     filename: nodejs6
   become: yes
 
+## Crear usuario NodeRed
+- user: 
+    name: nodered
+    state: present
+    system: no             
+    createhome: yes        
+    home: /home/nodered  
+
 - name: Instalar nodejs
   apt: name=nodejs state=present
   become: yes

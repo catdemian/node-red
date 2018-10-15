@@ -7,13 +7,13 @@ After=network.target
 ExecStart=/usr/bin/node-red
 Restart=on-failure
 KillSignal=SIGINT
-User=root
-Group=root
+User=nodered
+Group=nodered
 
 StandardOutput=syslog               # Output to syslog
 StandardError=syslog                # Output to syslog
 SyslogIdentifier=nodered
-WorkingDirectory=/root
+WorkingDirectory=/home/nodered
 PIDFile=/var/run/forever.pid
 
 [Install]

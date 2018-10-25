@@ -1,21 +1,21 @@
 Node-Red Vagrant Ansible
 ========================
 
-Instalación de Node-Red en Ubuntu Xennial usando Vagrant y Ansible.
+Ansible playbook to run Node-Red on Ubuntu and Vagrant
 
 # node-red
 
-## Instalación y Uso
+## Installation and usage
 
-### Requisitos
+### Requirements
 
 - Vagrant
 - Ansible
 - VirtualBox
 
-### Instrucciones de uso
+### How to use
 
-1. Clonar este repositorio
-2. Acceder al directorio
-3. ejecutar `vagrant up`
-4. Abrir el navegador y acceder a  `http://localhost:1880`
+1. Clone this repository `git clone https://github.com/catdemian/nodered-ansible.git`
+2. Acces to the directory nodered-ansible `cd ./nodered-ansible/`
+3. Execute following command: `vagrant up`
+4. Access folllowing URL in your browser   `http://localhost:1880`
